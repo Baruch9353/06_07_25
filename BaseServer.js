@@ -24,7 +24,6 @@ import http from 'http';
 // Exercise 3: Return the request headers ===============================
 
 const server = http.createServer((req, res) => {
-  res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(req.headers));
 });
 
